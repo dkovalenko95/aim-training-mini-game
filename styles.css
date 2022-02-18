@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Khula&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: #111;
+  font-family: 'Khula', sans-serif;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+  color: #111;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FF4500;
+}
+
+.start {
+  font-size: 1.5rem;
+  width: 150px;
+  height: 50px;
+  background-color: #111;
+  border-radius: 10px;
+  line-height: 3.3rem;
+  transition: 0.4s all;
+  color: #fff;
+}
+
+h1 {
+  line-height: 1.4;
+  font-size: 4rem;
+}
+h3 {
+  font-size: 2rem;
+  margin: 0 15px;
+}
+.enemy-text {
+  font-size: 1.5rem;
+  color: #111;
+  margin-bottom: 20px;
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+  transition: margin 0.5s ease-out;
+  background: center center / cover url('img/wildwest.jpg');
+  background-attachment: fixed;
+}
+
+.screen.up {
+  margin-top: -100vh;
+}
+
+.time-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.time-list li {
+  margin: 10px;
+}
+
+.time-btn {
+  background-color: #111;
+  border: 3px solid #111;
+  color: #fff;
+  cursor: pointer;
+  font-family: inherit;
+  padding: .5rem 1rem;
+  font-size: 2rem;
+  line-height: 3.3rem;
+  border-radius: 10px;
+  transition: 0.4s all;
+}
+
+.time-btn:hover {
+  border: 3px solid #FF4500;
+  color: #FF4500;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.primary {
+  color: #FF4500;
+}
+
+.board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 900px;
+  height: 500px;
+  background: linear-gradient(118.38deg, #FFFAFA -4.6%, #F0FFF0 200.44%);
+  box-shadow: -8px -8px 20px #2A333D, 10px 7px 20px #475462;
+  border-radius: 30px;
+  overflow: hidden;
+  color: #111;
+  cursor: crosshair;
+}
+
+.target {
+  /* background: linear-gradient(90deg, #16D9E3 0%, #30C7EC 47%, #46AEF7 100%); */
+  position: absolute;
+  /* border-radius: 50%; */
+  z-index: 100;
+}
